@@ -388,7 +388,7 @@ async function handleCommand(cmd, raw){
   }
 
   // ACCESS://FILE:FENIX
-  if(cmd === 'ACCESS://FILE:FENIX'){
+  if(cmd === 'ACCESS FILE://FENIX'){
     const t = decodeSecret('ACCESS_FENIX');
     const pre = document.createElement('pre'); pre.className='box'; pre.textContent = t;
     writeHTML(pre);
@@ -582,4 +582,5 @@ document.addEventListener('click', function resume(){
 
 </script>
 </body>
+
 </html>
